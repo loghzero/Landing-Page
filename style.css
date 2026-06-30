@@ -1,7 +1,5 @@
-/* ===========================
-   Configurações gerais
-   Remove margens e paddings padrões
-=========================== */
+/*  Configurações gerais
+   Remove margens e paddings padrões*/
 
 *{
     margin:0;
@@ -25,9 +23,7 @@ body{
 }
 
 
-/* ===========================
-   Cabeçalho
-=========================== */
+/* Cabeçalho */
 
 header{
     background:#101820;
@@ -59,9 +55,7 @@ header p{
 }
 
 
-/* ===========================
-   Menu de navegação
-=========================== */
+/* Menu de navegação */
 
 nav ul{
     list-style:none;
@@ -88,9 +82,7 @@ nav a:hover{
 }
 
 
-/* ===========================
-   Conteúdo principal
-=========================== */
+/* Conteúdo principal */
 
 main{
     width:90%;
@@ -99,9 +91,7 @@ main{
 }
 
 
-/* ===========================
-   Caixas das seções
-=========================== */
+/* Caixas das seções */
 
 section,
 aside{
@@ -122,9 +112,7 @@ aside:hover{
 }
 
 
-/* ===========================
-   Títulos
-=========================== */
+/* Títulos */
 
 h2{
     color:#69b6ff;
@@ -137,9 +125,7 @@ h3{
 }
 
 
-/* ===========================
-   Lista de habilidades
-=========================== */
+/* Lista de habilidades */
 
 ul{
     padding-left:20px;
@@ -150,9 +136,7 @@ li{
 }
 
 
-/* ===========================
-   Cartões dos projetos
-=========================== */
+/* Cartões dos projetos */
 
 article{
     background:#3b4554;
@@ -170,10 +154,8 @@ article:hover{
 }
 
 
-/* ===========================
-   Informações extras
-   (GitHub, LinkedIn e Instagram)
-=========================== */
+/* Informações extras
+   (GitHub, LinkedIn e Instagram) */
 
 /* Como não são links, utilizei uma classe
    apenas para dar um efeito visual */
@@ -194,9 +176,7 @@ article:hover{
 }
 
 
-/* ===========================
-   Rodapé
-=========================== */
+/* Rodapé */
 
 footer{
     background:#101820;
@@ -207,10 +187,8 @@ footer{
 }
 
 
-/* ===========================
-   Responsividade
-   Ajustes para telas menores
-=========================== */
+/* Responsividade
+   Ajustes para telas menores */
 
 @media(max-width:768px){
 
