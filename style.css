@@ -4,104 +4,170 @@
     box-sizing:border-box;
 }
 
-body{
-    font-family: Arial, Helvetica, sans-serif;
-    background:#f4f4f4;
-    color:#333;
-    line-height:1.6;
+html{
+    scroll-behavior:smooth;
 }
 
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:linear-gradient(180deg,#151515,#20262f,#2b3440);
+    color:#ececec;
+    line-height:1.7;
+}
+
+/* HEADER */
+
 header{
-    background:#2c3e50;
-    color:white;
+    background:#101820;
     text-align:center;
-    padding:30px;
+    padding:35px;
+    border-bottom:3px solid #4fa3ff;
+    box-shadow:0 5px 20px rgba(0,0,0,.45);
 }
 
 header img{
     width:180px;
     height:180px;
     border-radius:50%;
-    margin-bottom:15px;
-    border: #ecf0f1 solid 3px;
+    object-fit:cover;
+    border:4px solid #4fa3ff;
+    margin-bottom:20px;
 }
 
 header h1{
     margin-bottom:10px;
+    font-size:2rem;
 }
 
 header p{
-    margin-bottom:20px;
+    color:#cfcfcf;
+    margin-bottom:25px;
 }
+
+/* MENU */
 
 nav ul{
     list-style:none;
 }
 
-nav ul li{
+nav li{
     display:inline-block;
-    margin:10px;
+    margin:0 15px;
 }
 
 nav a{
-    color:white;
     text-decoration:none;
+    color:white;
     font-weight:bold;
+    transition:0.3s;
 }
 
 nav a:hover{
-    color:#f1c40f;
+    color:#5fb3ff;
 }
+
+/* MAIN */
 
 main{
     width:90%;
     max-width:1000px;
-    margin:30px auto;
+    margin:40px auto;
 }
+
+/* CAIXAS */
 
 section,
 aside{
-    background:white;
-    margin-bottom:20px;
-    padding:20px;
-    border-radius:8px;
+    background:#2c3440;
+    padding:25px;
+    margin-bottom:25px;
+    border-radius:12px;
+    border:1px solid #455264;
+    box-shadow:0 10px 25px rgba(0,0,0,.30);
+    transition:.3s;
+}
+
+section:hover,
+aside:hover{
+    transform:translateY(-5px);
 }
 
 h2{
+    color:#69b6ff;
     margin-bottom:15px;
-    color:#2c3e50;
 }
+
+h3{
+    color:#8dc7ff;
+    margin-bottom:10px;
+}
+
+/* LISTA */
 
 ul{
     padding-left:20px;
 }
 
-article{
-    background:#ecf0f1;
-    padding:15px;
-    margin-top:15px;
-    border-radius:5px;
+li{
+    margin-bottom:8px;
 }
+
+/* PROJETOS */
+
+article{
+    background:#3b4554;
+    margin-top:20px;
+    padding:20px;
+    border-radius:10px;
+    transition:0.3s;
+}
+
+article:hover{
+    background:#4a5668;
+    transform:translateY(-3px);
+}
+
+/* REDES SOCIAIS */
+
+.social{
+    color:#b6d9ff;
+    display:inline-block;
+    transition:.3s;
+    font-weight:bold;
+    cursor:default;
+}
+
+.social:hover{
+    color:#56b0ff;
+    transform:scale(1.05);
+}
+
+/* FOOTER */
 
 footer{
-    background:#2c3e50;
-    color:white;
+    background:#101820;
     text-align:center;
-    padding:20px;
+    padding:25px;
+    border-top:3px solid #4fa3ff;
+    margin-top:40px;
 }
 
-/* Responsividade */
+/* RESPONSIVO */
 
 @media(max-width:768px){
-
-    nav ul li{
-        display:block;
-        margin:10px 0;
-    }
 
     header img{
         width:140px;
         height:140px;
+    }
+
+    nav li{
+        display:block;
+        margin:15px 0;
+    }
+
+    main{
+        width:95%;
     }
 
 }
