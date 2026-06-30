@@ -1,12 +1,21 @@
+/* ===========================
+   Configurações gerais
+   Remove margens e paddings padrões
+=========================== */
+
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
 }
 
+/* Faz a rolagem entre as seções ficar suave */
+
 html{
     scroll-behavior:smooth;
 }
+
+/* Cor de fundo da página e fonte principal */
 
 body{
     font-family:Arial, Helvetica, sans-serif;
@@ -15,7 +24,10 @@ body{
     line-height:1.7;
 }
 
-/* HEADER */
+
+/* ===========================
+   Cabeçalho
+=========================== */
 
 header{
     background:#101820;
@@ -24,6 +36,8 @@ header{
     border-bottom:3px solid #4fa3ff;
     box-shadow:0 5px 20px rgba(0,0,0,.45);
 }
+
+/* Foto de perfil */
 
 header img{
     width:180px;
@@ -44,7 +58,10 @@ header p{
     margin-bottom:25px;
 }
 
-/* MENU */
+
+/* ===========================
+   Menu de navegação
+=========================== */
 
 nav ul{
     list-style:none;
@@ -55,6 +72,8 @@ nav li{
     margin:0 15px;
 }
 
+/* Links do menu */
+
 nav a{
     text-decoration:none;
     color:white;
@@ -62,11 +81,16 @@ nav a{
     transition:0.3s;
 }
 
+/* Cor ao passar o mouse */
+
 nav a:hover{
     color:#5fb3ff;
 }
 
-/* MAIN */
+
+/* ===========================
+   Conteúdo principal
+=========================== */
 
 main{
     width:90%;
@@ -74,7 +98,10 @@ main{
     margin:40px auto;
 }
 
-/* CAIXAS */
+
+/* ===========================
+   Caixas das seções
+=========================== */
 
 section,
 aside{
@@ -84,13 +111,20 @@ aside{
     border-radius:12px;
     border:1px solid #455264;
     box-shadow:0 10px 25px rgba(0,0,0,.30);
-    transition:.3s;
+
+    /* Pequena animação ao passar o mouse */
+    transition:0.3s;
 }
 
 section:hover,
 aside:hover{
     transform:translateY(-5px);
 }
+
+
+/* ===========================
+   Títulos
+=========================== */
 
 h2{
     color:#69b6ff;
@@ -102,7 +136,10 @@ h3{
     margin-bottom:10px;
 }
 
-/* LISTA */
+
+/* ===========================
+   Lista de habilidades
+=========================== */
 
 ul{
     padding-left:20px;
@@ -112,7 +149,10 @@ li{
     margin-bottom:8px;
 }
 
-/* PROJETOS */
+
+/* ===========================
+   Cartões dos projetos
+=========================== */
 
 article{
     background:#3b4554;
@@ -122,27 +162,41 @@ article{
     transition:0.3s;
 }
 
+/* Destaque ao passar o mouse */
+
 article:hover{
     background:#4a5668;
     transform:translateY(-3px);
 }
 
-/* REDES SOCIAIS */
+
+/* ===========================
+   Informações extras
+   (GitHub, LinkedIn e Instagram)
+=========================== */
+
+/* Como não são links, utilizei uma classe
+   apenas para dar um efeito visual */
 
 .social{
     color:#b6d9ff;
     display:inline-block;
-    transition:.3s;
+    transition:0.3s;
     font-weight:bold;
     cursor:default;
 }
+
+/* Aumenta um pouco e muda de cor */
 
 .social:hover{
     color:#56b0ff;
     transform:scale(1.05);
 }
 
-/* FOOTER */
+
+/* ===========================
+   Rodapé
+=========================== */
 
 footer{
     background:#101820;
@@ -152,7 +206,11 @@ footer{
     margin-top:40px;
 }
 
-/* RESPONSIVO */
+
+/* ===========================
+   Responsividade
+   Ajustes para telas menores
+=========================== */
 
 @media(max-width:768px){
 
@@ -160,6 +218,8 @@ footer{
         width:140px;
         height:140px;
     }
+
+    /* Menu fica um item embaixo do outro */
 
     nav li{
         display:block;
